@@ -1,0 +1,37 @@
+---
+server:
+  port: 8222
+  contextPath: /SpringBootTodoApp
+---
+spring:
+  profiles: local,default
+datasource:
+  sampleapp:
+    url: jdbc:h2:~/todotest
+    username: SA
+    password:
+    driverClassName: org.h2.Driver
+    defaultSchema:
+    maxPoolSize: 10
+    hibernate:
+      hbm2ddl.method: create-drop
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.H2Dialect
+---
+spring:
+  profiles: prod
+datasource:
+  sampleapp:
+    url: jdbc:jtds:sqlserver://localhost:1433/ToDoApplication;sendStringParametersAsUnicode=true
+    username: auto
+    password: connect
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.SQLServerDialect
+
