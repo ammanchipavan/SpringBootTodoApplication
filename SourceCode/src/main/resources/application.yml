@@ -8,7 +8,7 @@ spring:
 datasource:
   sampleapp:
     url: jdbc:h2:~/todotest
-    username: SA
+    username: sa
     password:
     driverClassName: org.h2.Driver
     defaultSchema:

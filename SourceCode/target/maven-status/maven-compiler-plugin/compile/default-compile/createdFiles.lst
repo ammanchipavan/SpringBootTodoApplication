@@ -1,0 +1,9 @@
+com\todo\springboot\service\TodoService.class
+com\todo\springboot\controller\RestApiController.class
+com\todo\springboot\SpringBootTodoApp.class
+com\todo\springboot\model\Todo.class
+com\todo\springboot\util\CustomErrorType.class
+com\todo\springboot\controller\AppController.class
+com\todo\springboot\service\TodoServiceImpl.class
+com\todo\springboot\configuration\JpaConfiguration.class
+com\todo\springboot\repositories\TodoRepository.class
